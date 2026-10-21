@@ -1,0 +1,881 @@
+/* =====================================================
+   THEME SYSTEM
+   ===================================================== */
+
+/* =====================================================
+   LIGHT MODE - DEFAULT
+   ===================================================== */
+
+:root {
+    /* LIGHT MODE */
+    --bg-main: #f5f7f6;
+    --bg-sidebar: #23439b;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f1f5f3;
+
+    --border: #d1d5db;
+
+    --text-primary: #1f2937;
+    --text-secondary: #4b5563;
+    --text-muted: #6b7280;
+
+    --green: #2f5d50;
+    --green-dark: #24483e;
+    --green-light: #7db69f;
+
+    --blue: #2563eb;
+    --blue-light: #60a5fa;
+
+    --gold: #c49a4a;
+    --white: #ffffff;
+}
+
+
+/* =====================================================
+   BODY - MODE TERANG
+   ===================================================== */
+
+body {
+    background-color: #f5f7f6;
+    color: #1f2937;
+}
+
+
+/* =====================================================
+   DARK MODE VARIABLES
+   ===================================================== */
+
+body.dark-mode {
+    --bg-main: #0f1715;
+    --bg-sidebar: #17201d;
+    --bg-card: #1b2421;
+    --bg-card-hover: #24332e;
+
+    --border: #34443e;
+
+    --text-primary: #f5f7f6;
+    --text-secondary: #d5ddda;
+    --text-muted: #aebbb5;
+
+    --green: #2f5d50;
+    --green-dark: #24483e;
+    --green-light: #7db69f;
+
+    --blue: #2563eb;
+    --blue-light: #60a5fa;
+
+    --gold: #c49a4a;
+    --white: #ffffff;
+}
+
+
+/* =====================================================
+   DARK MODE BODY
+   ===================================================== */
+
+body.dark-mode {
+    background-color: var(--bg-main) !important;
+    color: var(--text-primary) !important;
+}
+
+
+/* =====================================================
+   MAIN CONTENT
+   ===================================================== */
+
+body.dark-mode main,
+body.dark-mode .content,
+body.dark-mode .container,
+body.dark-mode .container-fluid {
+    background-color: var(--bg-main) !important;
+    color: var(--text-primary) !important;
+}
+
+
+/* =====================================================
+   SEMUA TEXT DARK MODE
+   ===================================================== */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #f5f7f6 !important;
+}
+
+body.dark-mode p {
+    color: #d5ddda !important;
+}
+
+body.dark-mode span {
+    color: #d5ddda;
+}
+
+body.dark-mode label {
+    color: #d5ddda !important;
+}
+
+body.dark-mode small {
+    color: #aebbb5 !important;
+}
+
+
+/* =====================================================
+   TEXT MUTED
+   ===================================================== */
+
+body.dark-mode .text-muted,
+body.dark-mode .text-secondary,
+body.dark-mode .muted,
+body.dark-mode .description,
+body.dark-mode .subtitle {
+    color: #d5ddda !important;
+    opacity: 1 !important;
+}
+
+
+/* =====================================================
+   SIDEBAR
+   ===================================================== */
+
+body.dark-mode .sidebar {
+    background-color: #17201d !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .sidebar h1,
+body.dark-mode .sidebar h2,
+body.dark-mode .sidebar h3,
+body.dark-mode .sidebar p,
+body.dark-mode .sidebar span,
+body.dark-mode .sidebar small {
+    color: #ffffff !important;
+}
+
+body.dark-mode .sidebar a {
+    color: #ffffff !important;
+    background-color: transparent !important;
+}
+
+body.dark-mode .sidebar a:hover {
+    background-color: #25352f !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .sidebar a.active {
+    background-color: #c49a4a !important;
+    color: #ffffff !important;
+}
+
+
+/* =====================================================
+   NAVBAR / HEADER
+   ===================================================== */
+
+body.dark-mode .navbar,
+body.dark-mode header,
+body.dark-mode .topbar,
+body.dark-mode .top-header {
+    background-color: #1b2421 !important;
+    color: #f5f7f6 !important;
+    border-color: #34443e !important;
+}
+
+
+/* Text navbar */
+body.dark-mode .navbar *,
+body.dark-mode header *,
+body.dark-mode .topbar *,
+body.dark-mode .top-header * {
+    color: #f5f7f6 !important;
+}
+
+
+/* =====================================================
+   DASHBOARD HEADER
+   ===================================================== */
+
+body.dark-mode .dashboard-header,
+body.dark-mode .welcome,
+body.dark-mode .welcome-box,
+body.dark-mode .welcome-card {
+    background-color: #1b2421 !important;
+    color: #f5f7f6 !important;
+
+    border: 1px solid #34443e !important;
+}
+
+
+/* Text dashboard */
+body.dark-mode .dashboard-header h1,
+body.dark-mode .dashboard-header h2,
+body.dark-mode .dashboard-header h3,
+body.dark-mode .dashboard-header p,
+body.dark-mode .dashboard-header span,
+
+body.dark-mode .welcome h1,
+body.dark-mode .welcome h2,
+body.dark-mode .welcome h3,
+body.dark-mode .welcome p,
+body.dark-mode .welcome span,
+
+body.dark-mode .welcome-box h1,
+body.dark-mode .welcome-box h2,
+body.dark-mode .welcome-box h3,
+body.dark-mode .welcome-box p,
+body.dark-mode .welcome-box span,
+
+body.dark-mode .welcome-card h1,
+body.dark-mode .welcome-card h2,
+body.dark-mode .welcome-card h3,
+body.dark-mode .welcome-card p,
+body.dark-mode .welcome-card span {
+    color: #f5f7f6 !important;
+}
+
+
+/* =====================================================
+   CARD DARK MODE
+   ===================================================== */
+
+body.dark-mode .card,
+body.dark-mode .box,
+body.dark-mode .card-body,
+body.dark-mode .card-header,
+body.dark-mode .form-container,
+body.dark-mode .form-box,
+body.dark-mode .content-box,
+body.dark-mode .stat-card,
+body.dark-mode .dashboard-card {
+    background-color: #1b2421 !important;
+    color: #f5f7f6 !important;
+
+    border: 1px solid #34443e !important;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.30) !important;
+}
+
+
+/* Isi card */
+body.dark-mode .card h1,
+body.dark-mode .card h2,
+body.dark-mode .card h3,
+body.dark-mode .card h4,
+body.dark-mode .card h5,
+body.dark-mode .card h6,
+body.dark-mode .card p,
+body.dark-mode .card span,
+
+body.dark-mode .stat-card h1,
+body.dark-mode .stat-card h2,
+body.dark-mode .stat-card h3,
+body.dark-mode .stat-card p,
+body.dark-mode .stat-card span,
+
+body.dark-mode .dashboard-card h1,
+body.dark-mode .dashboard-card h2,
+body.dark-mode .dashboard-card h3,
+body.dark-mode .dashboard-card p,
+body.dark-mode .dashboard-card span {
+    color: #f5f7f6 !important;
+}
+
+
+/* =====================================================
+   STATISTIK
+   ===================================================== */
+
+body.dark-mode .stat-card {
+    background-color: #1b2421 !important;
+}
+
+body.dark-mode .stat-card .number,
+body.dark-mode .stat-card .value,
+body.dark-mode .stat-card strong {
+    color: #ffffff !important;
+    font-weight: 700;
+}
+
+body.dark-mode .stat-card small,
+body.dark-mode .stat-card .label {
+    color: #cbd5d1 !important;
+}
+
+
+/* =====================================================
+   FIX KOTAK INFORMASI ADMIN
+   ===================================================== */
+
+body.dark-mode .info-box,
+body.dark-mode .info-admin,
+body.dark-mode .admin-info,
+body.dark-mode .information,
+body.dark-mode .info-card {
+    background-color: #1b2421 !important;
+    color: #f5f7f6 !important;
+    border: 1px solid #34443e !important;
+}
+
+body.dark-mode .info-box *,
+body.dark-mode .info-admin *,
+body.dark-mode .admin-info *,
+body.dark-mode .information *,
+body.dark-mode .info-card * {
+    opacity: 1 !important;
+}
+
+body.dark-mode .info-box h1,
+body.dark-mode .info-box h2,
+body.dark-mode .info-box h3,
+body.dark-mode .info-box p,
+body.dark-mode .info-box span,
+
+body.dark-mode .info-admin h1,
+body.dark-mode .info-admin h2,
+body.dark-mode .info-admin h3,
+body.dark-mode .info-admin p,
+body.dark-mode .info-admin span,
+
+body.dark-mode .admin-info h1,
+body.dark-mode .admin-info h2,
+body.dark-mode .admin-info h3,
+body.dark-mode .admin-info p,
+body.dark-mode .admin-info span,
+
+body.dark-mode .info-card h1,
+body.dark-mode .info-card h2,
+body.dark-mode .info-card h3,
+body.dark-mode .info-card p,
+body.dark-mode .info-card span {
+    color: #f5f7f6 !important;
+}
+
+
+/* =====================================================
+   TABLE DARK MODE
+   ===================================================== */
+
+body.dark-mode table {
+    width: 100%;
+    background-color: #1b2421 !important;
+    color: #f5f7f6 !important;
+    border-color: #34443e !important;
+}
+
+body.dark-mode thead,
+body.dark-mode thead tr,
+body.dark-mode th {
+    background-color: #24483e !important;
+    color: #ffffff !important;
+    border-color: #34443e !important;
+}
+
+body.dark-mode tbody {
+    background-color: #1b2421 !important;
+}
+
+body.dark-mode tbody tr {
+    background-color: #1b2421 !important;
+}
+
+body.dark-mode tbody td {
+    background-color: #1b2421 !important;
+    color: #d5ddda !important;
+    border-color: #34443e !important;
+}
+
+body.dark-mode tbody tr:hover,
+body.dark-mode tbody tr:hover td {
+    background-color: #24332e !important;
+    color: #ffffff !important;
+}
+
+
+/* =====================================================
+   TABLE BOX
+   ===================================================== */
+
+body.dark-mode .table-box {
+    background-color: #1b2421 !important;
+    color: #f5f7f6 !important;
+    border-color: #34443e !important;
+}
+
+
+/* =====================================================
+   EMPTY TABLE
+   ===================================================== */
+
+body.dark-mode .empty {
+    color: #d5ddda !important;
+}
+
+
+/* =====================================================
+   INPUT
+   ===================================================== */
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background-color: #202b27 !important;
+    color: #ffffff !important;
+    border: 1px solid #465650 !important;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #9eaaa5 !important;
+}
+
+body.dark-mode input:focus,
+body.dark-mode select:focus,
+body.dark-mode textarea:focus {
+    background-color: #202b27 !important;
+    color: #ffffff !important;
+    border-color: #6fa894 !important;
+
+    outline: none !important;
+
+    box-shadow:
+        0 0 0 3px rgba(111, 168, 148, 0.15) !important;
+}
+
+
+/* =====================================================
+   SELECT OPTION
+   ===================================================== */
+
+body.dark-mode select option {
+    background-color: #202b27 !important;
+    color: #ffffff !important;
+}
+
+
+/* =====================================================
+   LINK
+   ===================================================== */
+
+body.dark-mode a {
+    color: #7db69f;
+}
+
+body.dark-mode a:hover {
+    color: #a2d0bc;
+}
+
+
+/* =====================================================
+   BUTTON
+   ===================================================== */
+
+body.dark-mode button,
+body.dark-mode .btn {
+    color: #ffffff !important;
+}
+
+
+/* =====================================================
+   BUTTON KEMBALIKAN
+   ===================================================== */
+
+body.dark-mode .btn-kembali {
+    color: #ffffff !important;
+    background-color: #2563eb !important;
+}
+
+body.dark-mode .btn-kembali:hover {
+    background-color: #1d4ed8 !important;
+}
+
+
+/* =====================================================
+   BACK BUTTON
+   ===================================================== */
+
+body.dark-mode .back-btn {
+    color: #ffffff !important;
+    background-color: #2f5d50 !important;
+}
+
+body.dark-mode .back-btn:hover {
+    background-color: #24483e !important;
+}
+
+
+/* =====================================================
+   STATUS
+   ===================================================== */
+
+body.dark-mode .status {
+    color: #ffffff !important;
+}
+
+body.dark-mode .status.pinjam {
+    background-color: #5c4a22 !important;
+    color: #f5d98b !important;
+}
+
+body.dark-mode .status.kembali {
+    background-color: #1d4a35 !important;
+    color: #9be0b7 !important;
+}
+
+
+/* =====================================================
+   THEME TOGGLE
+   ===================================================== */
+
+.theme-toggle {
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #2f5d50;
+    color: #ffffff !important;
+
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.20);
+
+    transition:
+        background-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.theme-toggle:hover {
+    background: #24483e;
+    transform: scale(1.08);
+}
+
+body.dark-mode .theme-toggle {
+    background-color: #c49a4a !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .theme-toggle:hover {
+    background-color: #a47d32 !important;
+}
+
+
+/* =====================================================
+   MODAL
+   ===================================================== */
+
+body.dark-mode .modal,
+body.dark-mode .modal-content {
+    background-color: #1b2421 !important;
+    color: #f5f7f6 !important;
+    border-color: #34443e !important;
+}
+
+body.dark-mode .modal h1,
+body.dark-mode .modal h2,
+body.dark-mode .modal h3,
+body.dark-mode .modal p,
+body.dark-mode .modal span,
+body.dark-mode .modal label {
+    color: #f5f7f6 !important;
+}
+
+
+/* =====================================================
+   DROPDOWN
+   ===================================================== */
+
+body.dark-mode .dropdown-menu {
+    background-color: #1b2421 !important;
+    border-color: #34443e !important;
+}
+
+body.dark-mode .dropdown-menu a {
+    color: #d5ddda !important;
+}
+
+body.dark-mode .dropdown-menu a:hover {
+    background-color: #24332e !important;
+    color: #ffffff !important;
+}
+
+
+/* =====================================================
+   ALERT
+   ===================================================== */
+
+body.dark-mode .alert-success {
+    background-color: #1d3428 !important;
+    color: #9be0b7 !important;
+}
+
+body.dark-mode .alert-warning {
+    background-color: #3a301d !important;
+    color: #f0d17e !important;
+}
+
+body.dark-mode .alert-danger {
+    background-color: #3a2423 !important;
+    color: #f0aaa5 !important;
+}
+
+body.dark-mode .alert-info {
+    background-color: #203334 !important;
+    color: #a5d6d4 !important;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+body.dark-mode .footer {
+    background-color: #17201d !important;
+    color: #aebbb5 !important;
+}
+
+body.dark-mode .footer p,
+body.dark-mode .footer span {
+    color: #aebbb5 !important;
+}
+
+
+/* =====================================================
+   HR
+   ===================================================== */
+
+body.dark-mode hr {
+    border-color: #34443e !important;
+}
+
+
+/* =====================================================
+   DISABLED
+   ===================================================== */
+
+body.dark-mode button:disabled,
+body.dark-mode .btn:disabled {
+    color: #94a3b8 !important;
+    background-color: #29332f !important;
+    opacity: 1 !important;
+}
+
+
+/* =====================================================
+   OPACITY FIX
+   ===================================================== */
+
+body.dark-mode,
+body.dark-mode * {
+    opacity: 1;
+}
+
+
+/* =====================================================
+   TRANSITION
+   ===================================================== */
+
+body,
+body * {
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
+}
+/* =====================================================
+   GLOBAL DARK MODE - SEMUA HALAMAN
+===================================================== */
+
+body.dark-mode {
+    background-color: #0f1715 !important;
+    color: #f5f7f6 !important;
+}
+
+
+/* Background semua pembungkus halaman */
+body.dark-mode main,
+body.dark-mode .main,
+body.dark-mode .content,
+body.dark-mode .main-content,
+body.dark-mode .page-content,
+body.dark-mode .container,
+body.dark-mode .container-fluid,
+body.dark-mode .wrapper,
+body.dark-mode .page-wrapper {
+    background-color: #0f1715 !important;
+    color: #f5f7f6 !important;
+}
+
+
+/* =====================================================
+   CONTAINER / BOX HALAMAN
+===================================================== */
+
+body.dark-mode .content-container,
+body.dark-mode .content-box,
+body.dark-mode .page-container,
+body.dark-mode .section,
+body.dark-mode .section-box,
+body.dark-mode .form-container,
+body.dark-mode .form-box,
+body.dark-mode .table-container,
+body.dark-mode .table-box {
+    background-color: #1b2421 !important;
+    color: #f5f7f6 !important;
+    border-color: #34443e !important;
+}
+
+
+/* =====================================================
+   HEADER HALAMAN
+===================================================== */
+
+body.dark-mode .header {
+    background-color: #1b2421 !important;
+    color: #f5f7f6 !important;
+}
+
+body.dark-mode .header h1,
+body.dark-mode .header h2,
+body.dark-mode .header h3 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .header p {
+    color: #d5ddda !important;
+}
+
+
+/* =====================================================
+   SEMUA ELEMEN PUTIH
+   yang biasanya berasal dari CSS halaman
+===================================================== */
+
+body.dark-mode .white-box,
+body.dark-mode .panel,
+body.dark-mode .box-white,
+body.dark-mode .bg-white {
+    background-color: #1b2421 !important;
+    color: #f5f7f6 !important;
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+body.dark-mode .card,
+body.dark-mode .card-body,
+body.dark-mode .card-header {
+    background-color: #1b2421 !important;
+    color: #f5f7f6 !important;
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+body.dark-mode form {
+    color: #f5f7f6 !important;
+}
+
+body.dark-mode form label {
+    color: #d5ddda !important;
+}
+
+
+/* =====================================================
+   TABEL
+===================================================== */
+
+body.dark-mode .table-box,
+body.dark-mode table {
+    background-color: #1b2421 !important;
+    color: #f5f7f6 !important;
+}
+
+body.dark-mode tbody,
+body.dark-mode tbody tr,
+body.dark-mode tbody td {
+    background-color: #1b2421 !important;
+    color: #d5ddda !important;
+}
+
+
+/* =====================================================
+   LINK
+===================================================== */
+
+body.dark-mode a {
+    color: #7db69f;
+}
+
+
+/* =====================================================
+   JIKA ADA DIV DENGAN BACKGROUND PUTIH
+===================================================== */
+
+body.dark-mode div[style*="background: white"],
+body.dark-mode div[style*="background-color: white"],
+body.dark-mode div[style*="background:#fff"],
+body.dark-mode div[style*="background: #fff"],
+body.dark-mode div[style*="background-color:#fff"],
+body.dark-mode div[style*="background-color: #fff"] {
+    background-color: #1b2421 !important;
+    color: #f5f7f6 !important;
+}
+
+
+/* =====================================================
+   TEKS DI SEMUA HALAMAN
+===================================================== */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #ffffff !important;
+}
+
+body.dark-mode p,
+body.dark-mode label {
+    color: #d5ddda !important;
+}
+/* =====================================================
+   DARK MODE - PENGAJUAN, PENGEMBALIAN & RIWAYAT
+===================================================== */
+
+/* Background halaman */
+body.dark-mode .container,
+body.dark-mode .main-content,
+body.dark-mode .content,
+body.dark-mode .page-content {
+    background-color: #0f1715 !important;
+    color: #f5f7f6 !important;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+body.dark-mode .header {
+    background-color: #1b2421 !important;
+    color: #f5f7f6 !important;
+}
+
+body.dark-mode .header h1,
+body.dark-mode .header h2,
